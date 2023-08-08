@@ -1,0 +1,29 @@
++ Laravel Breeze
+Laravel Breeze is a minimal, simple implementation of all of Laravel's authentication features,
+ including login, registration, password reset, email verification, and password confirmation. 
+ In addition, Breeze includes a simple "profile" page where the user may update their name, email address, 
+ and password.
+------
++ Laratrust/ installation
+Laravel roles and permission package
+------|
+++ Seeder
+Laratrust comes with a database seeder, this seeder helps you fill 
+the permissions for each role depending on the module,
+ and creates one user for each role.
+-----
+php artisan db:seed
+----
+laravel doc/routing/routing groups/controller
+php artisan make:controller Admin/DashboardController
+-----
+instal Laravel snippets for Visual Studio Code (Support Laravel 5 and above)
+Installing
+--------
+php artisan optimize:clear
+--------
+mailtrap for sendeng email
+-------
+git
+- $ git init
+
