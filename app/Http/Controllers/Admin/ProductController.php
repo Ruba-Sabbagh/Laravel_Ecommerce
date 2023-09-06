@@ -11,6 +11,13 @@ class ProductController extends Controller
         return view('admin.allproduct');
     }
     public function AddProduct(){
-        return view('admin.addproduct');
+        $request->validate([
+            'name' => 'required|unique:products',// category table name
+        ]);
+        Category::insert([
+            'name' => $request->name, // input name
+            'slug' => strtolower(str_replace(' ','-',$request->name)),
+        ]);
+        return redirect()->route('allproduct')->with('message','Product Added Successfully') ;
     }
 }

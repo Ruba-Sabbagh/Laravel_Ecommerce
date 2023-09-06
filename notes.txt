@@ -21,9 +21,48 @@ instal Laravel snippets for Visual Studio Code (Support Laravel 5 and above)
 Installing
 --------
 php artisan optimize:clear
+php artisan make:model Catagory -m
 --------
 mailtrap for sendeng email
 -------
 git
 - $ git init
+- git add .
+- git commit -m "first commit"
+- git status
+- git remote add origin https://github.com/Ruba-Sabbagh/Laravel_Ecommerce.git
+- git push -u origin master بحاجة كاسر بروكسسي
+---------------------
+لسحب التعديلات  من على الداتا بيز
+If you are using MySQL and Laravel 5.1 or above you can use php artisan code:models from this package reliese/laravel. All you need to do is:
 
+composer require reliese/laravel
+Add the service provider to your config/app.php file Reliese\Coders\CodersServiceProvider::class
+Publish the config file with php artisan vendor:publish --tag=reliese-models
+Make sure your database is correctly configured in config/database.php and .env files.
+And finally issue the command: php artisan code:models
+This package will scan your database and create all models for you. If you need something more specific, you can customize its config file.
+------------------
+@csrf
+Cross-site request forgeries are a type of malicious exploit whereby unauthorized commands are performed on behalf of an authenticated user. Thankfully, Laravel makes it easy to protect your application from cross-site request forgery (CSRF) attacks.
+----------------
+Validation
+$request->validate([
+    'title' => 'bail|required|unique:posts|max:255',
+    'body' => 'required',
+]);
+Displaying The Validation Errors
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+------------------------
+for editable table
+https://yajrabox.com/docs/laravel-datatables/10.0
+https://datatables.net/manual/installation 
+https://tutorial101.blogspot.com/2023/07/laravel-10-ajax-datatables-crud-create.html

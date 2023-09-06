@@ -10,4 +10,10 @@ class OrderController extends Controller
     public function Index(){
         return view('admin.pendingorder');
     }
+    public function CompletedOrder(){
+        return view('admin.completedorder');
+    }
+    public function CancelOrder(){
+        return view('admin.cancelorder');
+    }
 }

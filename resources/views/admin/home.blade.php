@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  @include('admin.css');
+  @include('admin.css')
   </head>
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_sidebar.html -->
-      @include('admin.sidebar');
+      @include('admin.sidebar')
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_navbar.html -->
-        @include('admin.navbar');
+        @include('admin.navbar')
         <!-- partial -->
-        @include('admin.body');
+        @include('admin.body')
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    @include('admin.script');
+    @include('admin.script')
     <!-- End custom js for this page -->
   </body>
 </html>

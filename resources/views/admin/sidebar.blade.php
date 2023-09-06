@@ -58,73 +58,64 @@
           </li>
          
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">CATEGORY</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Add Category</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">All Category</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('allcategory')}}">All Category</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">SUB CATEGORY</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Add Sub Category</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">All Sub Category</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('allsubcategory')}}">All Sub Category</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">PRODUCTS</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Add Product</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">All Product</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('allproduct')}}">All Product</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">ORDERS</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Pending Orders</a></li>
-                
+                <li class="nav-item"> <a class="nav-link" href="{{route('pendingorder')}}">Pending Orders</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('completedorder')}}">Completed Orders</a></li> 
+                <li class="nav-item"> <a class="nav-link" href="{{route('cancelorder')}}">Cancel Orders</a></li>
               </ul>
             </div>
           </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('view_catagory')}}">
-              <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
-              </span>
-              <span class="menu-title">Catagory</span>
-            </a>
-          </li>
+         
           <li class="nav-item menu-items">
             <a class="nav-link" href="pages/tables/basic-table.html">
               <span class="menu-icon">
