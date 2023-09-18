@@ -12,7 +12,7 @@ Laratrust comes with a database seeder, this seeder helps you fill
 the permissions for each role depending on the module,
  and creates one user for each role.
 -----
-php artisan db:seed
+php artisan db:seed لانشاء الصلاحيات الموجودة بملف الكونفغ لاراترست سيدر
 ----
 laravel doc/routing/routing groups/controller
 php artisan make:controller Admin/DashboardController

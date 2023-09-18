@@ -21,7 +21,7 @@
         @include('admin.navbar');
         <!-- partial -->
         <div class="main-panel">
-          <div class="content-wrapper">
+          <div class="content-wrapper" style="background-color: #ffff">
             @if(session()->has('message'))
              <div class="alert alert-success">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
@@ -56,7 +56,7 @@
                     
                     
                     <div class="col-sm-offset-2 col-sm-10"><br/>
-                        <button type="submit" class="btn btn-primary" id="btn-save">Save changes</button>
+                        <button type="submit" class="btn btn-primary" style="background-color: brown" id="btn-save">Save changes</button>
                     </div>
                 </form>
             </div>
@@ -78,20 +78,18 @@
               </div>
             @endif
            
-            <table class="table table-bordered" id="ajax-crud-datatable">
+            <table class="center" id="ajax-crud-datatable">
               <caption style="caption-side:initial">Category Information</caption>
             <thead class="table-dark">
                 <tr>
-                    <td>Id</td>
+                    <td>#</td>
                     <td>Catagory</td>
                     <td>Action</td>
                 </tr>
             </thead>
             
             </table>
-            <table class="center">
-                
-            </table>
+           
           </div>
           </div>
         <!-- main-panel ends -->
@@ -120,9 +118,19 @@
                 { data: 'id', name: 'id' },
                 { data: 'name', name: 'name' },
                 { data: 'action', name: 'action', orderable: false},
+               
             ],
-            order: [[0, 'desc']]
+            order: [[1, 'asc']]
         });
+        table.on('order.dt search.dt', function () {
+            let i = 1;
+    
+            table
+                .cells(null, 0, { search: 'applied', order: 'applied' })
+                .every(function (cell) {
+                    this.data(i++);
+                });
+        }).draw();
     });
        
 function add(){
