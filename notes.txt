@@ -32,6 +32,11 @@ git
 - git status
 - git remote add origin https://github.com/Ruba-Sabbagh/Laravel_Ecommerce.git
 - git push -u origin master بحاجة كاسر بروكسسي
+---------------
+git for install code
+- git init
+- git pull الرابط
+
 ---------------------
 لسحب التعديلات  من على الداتا بيز
 If you are using MySQL and Laravel 5.1 or above you can use php artisan code:models from this package reliese/laravel. All you need to do is:
