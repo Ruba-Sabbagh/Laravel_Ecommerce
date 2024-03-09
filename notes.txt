@@ -33,6 +33,7 @@ git
 - git remote add origin https://github.com/Ruba-Sabbagh/Laravel_Ecommerce.git
 - git push -u origin master بحاجة كاسر بروكسسي
 ---------------
+$ git config --global user.name "Ruba-Sabbagh"
 git for install code
 - git init
 - git pull الرابط
